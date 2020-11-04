@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #ddd;
+    
+}
+header {
+    background: #761eda;
+    padding: 40px;
+    border-radius: 4px;
+    font-weight: 10px;
+    color: rgb(245, 250, 252);
+    min-height: 70px;
+    border-bottom: #e8491d 4px solid;
+}
+.bar-navigator {
+    overflow: hidden;
+    background-color: rgb(26, 24, 24);
+   }
+.bar-navigator ul {
+   
+    
+ }
+ .bar-navigator ul li {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+ }
+ .bar-navigator ul li a {
+   
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+ }
+.bar-navigator ul li a:hover, 
+.rightcolumn > div:hover  {
+    text-decoration: underline;
+    color: #e8491d;
+ }
+ .leftcolumn {   
+    float: left;
+    width: 75%;
+    
+  }
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #010007;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+  }
+.rightcolumn > h3 {
+  padding: 5px;
+  margin: auto;
+  background-color: teal;
+}
+
+.card-principal , 
+.card-secondary  {
+    background-color: rgb(212, 209, 209);
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .card-principal h2:hover , 
+  .card-secondary div:hover{
+    background-color: rosybrown;
+    text-decoration: underline;
+  } 
+.card-principal {
+  max-width: 100%;
+  text-align: center;
+}
+.card-principal p {
+  text-align: justify;
+}
+.card-principal > img {
+  justify-content: center;
+  width: 90%;
+}
+.card-secondary {
+    display: flex; 
+
+    }
+.card-secondary div {
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background: rgb(197, 194, 194);
+  
+}
+.card-secondary img {
+  max-width: 400px;
+  align-content: center;
+  padding: 10px 10px 5px 5px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: center;
+}
+
+.rightcolumn > div {
+  padding: 5px;
+  margin: 5px;
+}
+.footer {
+    color: white;
+    padding: 20px;
+    background: rgb(20, 19, 19);
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    border-top: #e8491d 3px solid;
+}  
+.footer a {
+  text-decoration: none;
+  color: #ddd;
+
+}
+.less-important {
+    text-align: justify;
+    display: flex;
+    float: left;
+    width: 75%;
+    justify-content:center;
+  
+
+}
+.less-important div {
+  
+}
+.more-news {
+  background-color: rgb(212, 209, 209);
+  margin-top: 5px;
+  padding: 5px;
+
+}
+.more-news >div {
+  padding: 5px;
+  margin: 5px;
+  text-align: justify;
+  background-color: rgb(214, 212, 214);
+}
+.more-news >div:hover,
+.footer a:hover {
+  background-color:rgb(70, 238, 196);
+  text-decoration: underline;
+  color: blue;
+  
+}
+.more-news > p {
+  padding: 5px;
+}
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 10px;
+    
+}
+@media screen and (max-width: 800px) {
+        .bar-navigator {
+            display: none;  
+}
