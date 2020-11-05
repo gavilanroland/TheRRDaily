@@ -167,7 +167,7 @@ header {
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 10px;
-    
+      grid-template-columns: 1fr;
 }
 @media screen and (max-width: 800px) {
         .bar-navigator {

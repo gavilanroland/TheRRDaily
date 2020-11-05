@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Monoton&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/form.css">
         <title>RR-Rosario Dairio - Portada</title>
     </head>
     <div>
@@ -30,55 +31,100 @@
                     <li style="float:right" ><a href="suscription.html"  >Suscription</a></li>
                 </ul>
             </nav>
-            <div class="form">
-            <form action="" method="POST">
-                <div id="form">
-                    <h1>Registrer Form</h1>
-                    <div class="group">
-                        <label for="">Full Name</label>
-                        <input type="text" name ="" id="name"><span class="bar"></span>
-                    </div>
-                    <div class="group">
-                        <label for="">email</label>
-                        <input type="text" email ="" id="email"><span class="bar"></span>
-                    </div>
-                    <div class="group">
-                        <label for="">Pasword</label>
-                        <input type="text" pasword ="" id="pasword"><span class="bar"></span>
-                    </div>
-                    </div>
-                    <div class="group">
-                        <label for="">Age</label>
-                        <input type="text" Age ="" id="age"><span class="bar"></span>
-                    </div>
-                    <div class="group">
-                        <label for="">Telephone</label>
-                        <input type="text" tel ="" id="tel"><span class="bar"></span>
-                    </div>
-                    <div class="group">
-                        <label for="">Adress</label>
-                        <input type="text" Adress ="" id="adress"><span class="bar"></span>
-                    </div>
-                    <div class="group">
-                        <label for="">City</label>
-                        <input type="text" City ="" id="city"><span class="bar"></span>
-                    </div>
-                    <div class="group">
-                        <label for="">PC</label>
-                        <input type="text" pc ="" id="pc"><span class="bar"></span>
-                    </div>
-                    <div class="group">
-                        <label for="">NID</label>
-                        <input type="text" Nid ="" id="nid"><span class="bar"></span>
-                    </div>
-
-                    <button type="submit">Subscribe</button>
-                    <p class="warning" id="warning"></p>
-
-                </div>
-            </form>
+            <div class="border">
+                <h1>Registrer Form</h1>
+                <form action="" class="form" id="form">
+                        <!-- Group: Name -->
+                        <div class="form__group" id="group__name">
+                            <label for="name" class="form__label">Full Name</label>
+                            <div class="form__group-input">
+                            <input type="text" class="form__input" name="name" id="name" placeholder="Name LastName">
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">It must have more than 6 letters and at least one space between.</p>
+                        </div>
+                        <!-- Group: email -->
+                        <div class="form__group" id="group__email">
+                            <label for="email" class="form__label">email</label>
+                            <div class="form__group-input">
+                            <input type="text" class="form__input" name="email" id="email" placeholder="mail@email.com">
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">it must have a valid email format..</p>
+                        </div>
+                        <!-- Group: password -->
+                        <div class="form__group" id="group__password">
+                            <label for="password" class="form__label">Password</label>
+                            <div class="form__group-input">
+                            <input type="password" class="form__input" name="password" id="password" >
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">At least 8 characters, only with letters and numbers</p>
+                        </div>
+                        <!-- Group: Age -->
+                        <div class="form__group" id="group__age">
+                            <label for="age" class="form__label">Age</label>
+                            <div class="form__group-input">
+                            <input type="number" class="form__input" name="age" id="age" placeholder="18">
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">Whole number greater than or equal to 18..</p>
+                        </div>
+                        <!-- Group: Telephone -->
+                        <div class="form__group" id="group__telephone">
+                            <label for="telephone" class="form__label">Telephone</label>
+                            <div class="form__group-input">
+                            <input type="number" class="form__input" name="telephone" id="telephone" placeholder="011-1111111">
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">Number of at least 7 digits, do not accept spaces, hyphens or parentheses.</p>
+                        </div>
+                        <!-- Group: Address -->
+                        <div class="form__group" id="group__address">
+                            <label for="address" class="form__label">Address</label>
+                            <div class="form__group-input">
+                            <input type="text" class="form__input" name="address" id="address" placeholder="Street, Number">
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">At least 5 characters, with letters, numbers and a space between..</p>
+                        </div>
+                        <!-- Group: City -->
+                        <div class="form__group" id="group__city">
+                            <label for="city" class="form__label">City</label>
+                            <div class="form__group-input">
+                            <input type="text" class="form__input" name="city" id="city" placeholder="City">
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">At least 3 characters.</p>
+                        </div>
+                        <!-- Group: PostCode -->
+                        <div class="form__group" id="group__postcode">
+                            <label for="postcode" class="form__label">Post Code</label>
+                            <div class="form__group-input">
+                            <input type="number" class="form__input" name="postcode" id="postcode" placeholder="999">
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">At least 3 characters.</p>
+                        </div>
+                        <!-- Group: DIN -->
+                        <div class="form__group" id="group__din">
+                            <label for="din" class="form__label">DIN</label>
+                            <div class="form__group-input">
+                            <input type="number" class="form__input" name="din" id="din" placeholder="99999999">
+                            <i class="form__validation-status fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">It must 7 or 8 digit number..</p>
+                        </div>  
+                        <div class="form__message" id="form__message">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Please fill in form correctly. </p>
+                        </div>      
+                    <!-- Group: button-send -->                 
+                    <button type="submit" class="button-send">Subscribe</button>
+                    <p class="form__message-succes" id="form__message-succes">Formulary send succesfully!</p>
+                </form>
             </div>
-            <script src="form2.js"></script>
+            <script src="js/form2.js"></script>
+            
         </body>
         <footer class="footer">
             <ul>
