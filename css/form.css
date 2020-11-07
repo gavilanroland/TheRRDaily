@@ -1,22 +1,23 @@
-.border {
-    background: #dee5e7;
-    padding: 20px;
-    margin: 40px;
-}
-.border h1 {
+
+h3 {
     margin: 10px;
-    padding: 10px;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(182, 24, 3);
+	text-align: center;
+	text-decoration: underline;
 }
 .form {
-	display: grid;
+	display: block;
 	grid-template-columns: 1fr;
     gap: 20px;
     border: 1px solid #0000;
     max-width: 800px;
-	width: 90%;
+	width: 80%;
 	margin: auto;
     padding: 40px;
-    text-align: left;
+	text-align: left;
+	background-color: rgba(92, 99, 99, 0.6) ;
 }
 
 .form__label {
@@ -70,10 +71,11 @@
     display: flex;
 	flex-direction: column;
     align-items: center;
-    background: royalblue;
-    width: 50%;
+    background: rgb(41, 39, 40);
+    width: 30%;
     border-radius: 10px;
-    padding: 5px 5px;
+	padding: 15px 15px;
+	margin: 10px;
     color: white;
     cursor: pointer;
 	transition: .1s ease all;
@@ -81,7 +83,7 @@
 .form__message {
 	height: 45px;
 	line-height: 45px;
-	background: #b10d0d;
+	color: #f51313;
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
@@ -124,12 +126,18 @@
 }
 
 
-.form__group-correct  {
+.form__group-correct  
+ {
 	color: #1ed12d;
 	opacity: 1;
 }
 
-.form__group-incorrect .form__label {
+.form__group-correct 
+.form__input {
+	border: 3px solid #1ed12d;
+}
+.form__group-incorrect 
+.form__label {
 	color: #bb2929;
 }
 
@@ -138,7 +146,8 @@
 	opacity: 1;
 }
 
-.form__group-incorrect .form__input {
+.form__group-incorrect 
+.form__input {
 	border: 3px solid #bb2929;
 }
 
